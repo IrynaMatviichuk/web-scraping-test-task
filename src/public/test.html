@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body {background-color:seashell}
+        h1 {font-style: italic; color: red;}
+
+        </style>
+    </head>
+    <body>
+        <h1>Games Info</h1>
+        <ul>
+            {% for line in data %}
+            <li>{{line}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
