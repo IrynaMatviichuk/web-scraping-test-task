@@ -14,7 +14,6 @@ def create_app():
 
     @app.route("/games/info")
     def game_info():
-        print(games_data.split("\n"))
         return render_template("test.html", data=games_data.split("\n"))
 
 
